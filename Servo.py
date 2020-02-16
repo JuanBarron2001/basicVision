@@ -10,10 +10,10 @@ class Servo:
         self.input1 = self.board.get_pin('d:2:i')
         self.input2 = self.board.get_pin('d:3:i')
 
-    def runPwm(self, power):
+    def run_pwm(self, power):
         self.servo.write(power)
 
-    def setAngle(self, angle):
+    def set_angle(self, angle):
         self.servo.write(angle)
 
     def get_option(self):

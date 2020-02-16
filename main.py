@@ -3,8 +3,8 @@ import camera
 
 cam = camera.Camera(0)
 servo = Servo.Servo('COM7', 9)
-servo.runPwm(0)
-servo.setAngle(0)
+servo.run_pwm(0)
+servo.set_Angle(90)
 
 green, yellow, blue = 1, 2, 3
 
@@ -18,7 +18,7 @@ def main():
     cam.convert_frame()
     cam.boxing()
     power = cam.set_power()
-    servo.setAngle(power)
+    servo.set_angle(power)
 
 
 while True:
